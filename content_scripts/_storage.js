@@ -19,7 +19,7 @@ var storage = {
 		});
 		localStorage['settings'] = JSON.stringify(settings);
 
-		console.log(localStorage);
+		// console.log(localStorage);
 	},
 	/* Settings */
 	getSetting: function(name) {

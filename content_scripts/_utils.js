@@ -12,7 +12,6 @@ var utils = {
 	parseCommentCount:function(container,id) {
 		// Find <a> containing the comment count
 		var commentHolder = container.next().find('td > a[href=\'item?id='+id+'\']');
-
 		// Get the number of comment count, return it
     	var currentCommentCount = parseInt(commentHolder.html().replace(/ comm(.*)/,''));
     	if(isNaN(currentCommentCount)) {
@@ -97,6 +96,7 @@ var utils = {
 	},
 	initialSubmissionCalculation: function() {
 		var submissionId = window.location.href.replace(/(.*)item\?id=/,'');
+		submissionId = parseInt(submissionId);
 		var comments = $("tr.athing");
 		var commentIds = [];
 
