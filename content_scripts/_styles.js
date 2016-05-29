@@ -30,7 +30,7 @@ var styles = {
 		head.appendChild(style);
 
 		/* Listings styling */
-		var listings = $("tr.athing");
+		var listings = $(".itemlist tr.athing");
 		var i = 0;
 		$.each(listings,function(key, listing) {
 			i+=1;
